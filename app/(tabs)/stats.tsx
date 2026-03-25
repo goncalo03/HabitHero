@@ -1,6 +1,7 @@
 import EmptyState from "@/components/EmptyState";
 import ScaledScreen from "@/components/ScaledScreen";
 import StatCard from "@/components/StatCard";
+import UpdateChecker from "@/components/UpdateChecker";
 import WeeklyChart from "@/components/WeeklyChart";
 import {
     calculateStreak,
@@ -142,6 +143,7 @@ export default function StatsScreen() {
               ))}
             </View>
           )}
+          <UpdateChecker />
         </ScrollView>
       </ScaledScreen>
     </SafeAreaView>
